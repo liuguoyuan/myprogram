@@ -1,4 +1,3 @@
-
 # myprogram
 
 #### 项目介绍
@@ -16,7 +15,7 @@
 
 #### 使用说明
 
-1. xxxx
+1. 用来记录小程序模块代码
 2. xxxx
 3. xxxx
 
@@ -36,4 +35,4 @@
 4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
 5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
 6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
->>>>>>> 168f874a471f579cc258bf6cdebdd175a5b1d42c
+
