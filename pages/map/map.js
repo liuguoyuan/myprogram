@@ -4,6 +4,7 @@ Page({
   data: {
     latitude: 23.099994,
     longitude: 113.324520,
+    address: '',
     markers: [{
       id: 1,
       latitude: 23.099994,
@@ -26,6 +27,7 @@ Page({
   onLoad: function () {
     this.getCenterLocation(this)
   },
+  // 获取当前地址
   getCenterLocation: function (_self) {
     
     wx.getLocation({
@@ -45,21 +47,22 @@ Page({
       key: "PKRBZ-M7MCW-7EIRF-OOUMT-EW6TQ-S4BFY"
     }) 
     qqmapsdk.reverseGeocoder({
-      // location: {
-      //   latitude: latitude,
-      //   longitude: longitude
-      // },
-      keyword: '酒店',
+      location: {
+        latitude: latitude,
+        longitude: longitude
+      },
+      // keyword: '酒店',
       //逆解析成功回调函数
       success: function (res) {
         console.log(res)
         var res = res.result;
         that.setData({
+          address: res.address,
           markers: [{
             id: 1,
-            latitude: 23.099994,
-            longitude: 113.324520,
-            name: 'T.I.T 创意园'
+            latitude: res.location.lat,
+            longitude: res.location.lng,
+            name: res.address
           }]
         })
       },
