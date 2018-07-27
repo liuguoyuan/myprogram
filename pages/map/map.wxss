@@ -7,6 +7,11 @@ page,.page-body,.page-section-gap{
   padding: 5rpx 30rpx;
 }
 
+.selcity{
+  padding: 0 30rpx;
+}
+
+
 .page-section-gap{
   box-sizing: border-box;
   padding: 0 30rpx;
