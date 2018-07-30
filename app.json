@@ -13,7 +13,10 @@
     "pages/column-chart/column-chart",
     "pages/double-line-chart/double-line-chart",
     "pages/line-column-chart/line-column-chart",
-    "pages/double-column-chart/double-column-chart"
+    "pages/double-column-chart/double-column-chart",
+    "pages/classify/classify",
+    "pages/tab/tab",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",

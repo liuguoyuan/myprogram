@@ -1,16 +1,28 @@
 <!--index.wxml-->
 <view class="container">
   <view class="btn-area">
-  <navigator url="/pages/map/map" hover-class="navigator-hover">
-    <button>定位</button>
-  </navigator>
-  <navigator url="/pages/mall/mall" hover-class="navigator-hover">
-    <button>选择城市</button>
-  </navigator>
-  <navigator url="/pages/city/city" hover-class="navigator-hover">
-    <button>城市选择器</button>
-  </navigator>
-  </view>
+    <navigator url="/pages/map/map" hover-class="navigator-hover">
+      <button>定位</button>
+    </navigator>
+    <navigator url="/pages/mall/mall" hover-class="navigator-hover">
+      <button>选择城市</button>
+    </navigator>
+    <navigator url="/pages/city/city" hover-class="navigator-hover">
+      <button>城市选择器</button>
+    </navigator>
+  
+    <navigator url="/pages/classify/classify" hover-class="navigator-hover">
+      <button>分类列表</button>
+    </navigator>
 
+    <navigator url="/pages/tab/tab" hover-class="navigator-hover">
+      <button>tab</button>
+    </navigator>
+
+    <navigator url="/pages/mine/mine" hover-class="navigator-hover">
+      <button>mine</button>
+    </navigator>
+
+  </view>
   
 </view>
