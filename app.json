@@ -16,7 +16,8 @@
     "pages/double-column-chart/double-column-chart",
     "pages/classify/classify",
     "pages/tab/tab",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "templates/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",

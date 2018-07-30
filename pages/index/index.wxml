@@ -25,4 +25,13 @@
 
   </view>
   
+  <import src="../../templates/list/list.wxml"/>
+ 
+<view class="tui-fixed">
+ <scroll-view style="height:100%;" scroll-y="true">
+ <template wx:for="{{menu}}" is="list" data="{{item}}"></template>
+ </scroll-view>
+</view>
+
+
 </view>

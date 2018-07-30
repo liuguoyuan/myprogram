@@ -1,0 +1,85 @@
+/* templates/list/list.wxss */
+.tui-menu-list{
+ line-height: 80rpx;
+ color: #555;
+ font-size: 35rpx;
+ padding: 0 0rpx 0 10px;
+ position: relative;
+}
+
+/*文字列表样式  */
+
+.tui-menu-list{
+  line-height: 80rpx;
+  color: #555;
+  font-size: 35rpx;
+  padding: 0 0rpx 0 10px;
+  position: relative;
+}
+.tui-menu-list:before{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #c8c7cc;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.tui-menu-list:last-child:before{
+  height: 0;
+}
+.tui-youjiantou:after{
+  font-family:"iconfont" !important;
+  content: '\e6a3';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
+.tui-xiajiantou:after{
+  font-family:"iconfont" !important;
+  content: '\e661';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
+.tui-shangjiantou:after{
+  font-family:"iconfont" !important;
+  content: '\e6de';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
+
+/*图文列表样式  */
+.tui-gallery-list{
+  color: #555;
+  font-size: 35rpx;
+  padding: 10px;
+  position: relative;
+}
+.tui-gallery-list:not(:last-child):before{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #c8c7cc;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}

@@ -1,8 +1,20 @@
 var appInstance = getApp();
 var util = require('../../utils/util.js');
+var postsData = require('../../utils/posts-data.js');
 
 var pageData = {
-  data: { "user_center1": { "type": "user-center", "style": "opacity:1;color:rgb(255, 255, 255);margin-top:0;font-size:37.5rpx;height:656.25rpx;margin-left:auto;", "content": "", "customFeature": { "mode": 1, "with-horizontal": true, "appendComponent": ["myAddress", "myOrder", "shoppingCart", "myMessage"] }, "animations": [], "page_form": "", "compId": "user_center1", "parentCompid": "user_center1" } },
+  data: { 
+    "user_center1": { 
+      "type": "user-center", 
+      "style": "opacity:1;color:rgb(255, 255, 255);margin-top:0;font-size:37.5rpx;height:656.25rpx;margin-left:auto;", 
+      "content": "", 
+      "customFeature": { "mode": 1, "with-horizontal": true, "appendComponent": ["myAddress", "myOrder", "shoppingCart", "myMessage"] },      "animations": [],
+      "page_form": "",
+      "compId": "user_center1",
+      "parentCompid": "user_center1"
+    },
+    date: '2018.07.30'
+  },
   app_title: '我的应用',
   app_description: '我的应用',
   page_router: 'page10000',
@@ -12,12 +24,18 @@ var pageData = {
   relobj_auto: [],
   bbsCompIds: [],
   dynamicVesselComps: [],
+  
   onLoad: function (e) {
-    appInstance.setPageUserInfo();
-    if (e.detail) {
-      this.dataId = e.detail;
-    }
-    appInstance.checkLogin();
+    // appInstance.setPageUserInfo();
+    // if (e.detail) {
+    //   this.dataId = e.detail;
+    // }
+    // appInstance.checkLogin();
+    console.log(postsData.postList[0].date)
+    var that = this;
+    that.setData({
+      date: postsData.postList[0].date
+    })
   },
   dataInitial: function () {
     appInstance.dataInitial();
@@ -32,9 +50,9 @@ var pageData = {
   },
   onShow: function () {
     var that = this;
-    setTimeout(function () {
-      appInstance.setPageUserInfo();
-    });
+    // setTimeout(function () {
+    //   appInstance.setPageUserInfo();
+    // });
   },
 
   pageScrollFunc: function (e) {

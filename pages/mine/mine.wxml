@@ -38,7 +38,7 @@
   </view>
 </template>
 <view class="ele-container">
-  <template is="zcUserCenter" data="{{data:user_center1, userInfo: userInfo}}"></template>
+  <template is="zcUserCenter" data="{{data:user_center1, userInfo: userInfo, date}}"></template>
 </view>
 
 </view>
